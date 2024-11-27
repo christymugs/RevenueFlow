@@ -68,7 +68,6 @@ sales-data-pipeline/
 ├── dags/
 │   └── sales_data_dag.py     # Apache Airflow DAG for orchestrating the data pipeline
 │
-├── requirements.txt          # Project dependencies
 └── README.md                 # Project overview and setup instructions
 ```
 
@@ -92,6 +91,7 @@ The main logic for processing the data is located in the scripts/data_pipeline.p
 3. Outputs meaningful insights, such as total sales, sales by product, and sales by customer.
 
 ### Example SQL Queries:
+```bash
 -- Total sales by product
 SELECT product_id, SUM(price * quantity) AS total_sales
 FROM sales_data
@@ -101,6 +101,7 @@ GROUP BY product_id;
 SELECT customer_id, SUM(price * quantity) AS total_sales
 FROM sales_data
 GROUP BY customer_id;
+```
 
 ## Results
 
