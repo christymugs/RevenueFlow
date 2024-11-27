@@ -54,6 +54,7 @@ airflow webserver --port 8080
 airflow scheduler            
 ```
 ## Project Structure
+```bash
 sales-data-pipeline/
 │
 ├── data/
@@ -69,6 +70,7 @@ sales-data-pipeline/
 │
 ├── requirements.txt          # Project dependencies
 └── README.md                 # Project overview and setup instructions
+```
 
 ## Database Creation
 The project uses an SQLite database to store and manage sales data. To create the database and load the sample data, follow these steps:
@@ -103,13 +105,14 @@ GROUP BY customer_id;
 ## Results
 
 Here's a preview of the sales data:
+```bash
 
 order_id	customer_id	product_id	quantity	price	order_date
 1	        101	201	                 2	        25.50	2024-11-01
 2	        102	202	                 1	        50.00	2024-11-01
 3	        103	203	                 3	        15.00	2024-11-02
 ...	...	...	...	...	...
-
+```
 
 ## Conclusion
 This project demonstrates how to use SQL and Apache Airflow to build an automated data pipeline that processes and analyzes e-commerce sales data. The pipeline extracts data from a CSV file, stores it in an SQLite database, and performs meaningful transformations and analysis. The results can be used to generate business insights and optimize sales strategies.
