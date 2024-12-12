@@ -25,8 +25,8 @@ To run this project, you need to have the following tools installed on your mach
 
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/sales-data-pipeline.git
-cd sales-data-pipeline
+git clone https://github.com/christymugs/revenueflow.git
+cd revenueflow
 ```
 
 #### Step 2: Install Required Packages
